@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="Stylesheet" href="css/style.css" />
+    <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/regular.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>OhMyFood</title>
+</head>
+
+<body>
+    <!----------------- Header/Logo ------------------>
+
+    <section class="loader">
+        <span class="spinner"></span>
+    </section>
+
+    <header>
+        <div class="logo">Ohmyfood</div>
+    </header>
+
+    <main class="mainpage">
+
+        <!----------------- Barre de recherche ------------------>
+
+        <form class="searchbar">
+            <div class="cherche">
+                <i class="fa-solid fa-location-dot"></i>
+                <input class="barrederecherche" type="search" name="barrederecherche" placeholder="Paris, Belleville">
+            </div>
+        </form>
+
+        <!----------------- Description du site ------------------>
+
+        <section class="description">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <div class="boutonexplore"><button class="btn-explore btn-commander">Explorer nos restaurants</button></div>
+        </section>
+
+        <!----------------- Fonctionnement ------------------>
+
+        <section class="fonctionnement">
+            <h2>Fonctionnement</h2>
+            <ul class="selection">
+                <li class="list"><span class="numero">1</span>
+                    <div class="choix">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        Choisissez un restaurant
+                    </div>
+                </li>
+
+                <li class="list"><span class="numero">2</span>
+                    <div class="choix">
+                        <i class="fa-solid fa-list"></i>
+                        <span>Composez votre menu</span>
+                    </div>
+                </li>
+
+                <li class="list"><span class="numero">3</span>
+                    <div class="choix">
+                        <i class="fa-sharp fa-solid fa-store"></i>
+                        <span>Dégustez au restaurant</span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!----------------- Restaurants ------------------>
+
+        <section class="Restaurants">
+            <h2>Restaurants</h2>
+            <div class="desktopcarte">
+                
+                <!----------------- carte La palette du goût ------------------>
+
+                <article>
+                    <a href="lapalette.html">
+                        <div class="imagemenu">
+                            <div class="nouveau">Nouveau</div>
+                            <img class="imghome" src="Images/palettedugout.jpg" alt="palettedugout">
+                        </div>
+                        <div class="nomdurestaurant1">
+                            <h3>La palette du goût
+                            </h3>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <div class="liker">
+                            <i class="fa-solid fa-heart fullheart"></i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </a>
+                </article>
+
+                <!----------------- carte La note enchantée ------------------>
+
+                <article>
+
+                    <a href="lanoteenchantee.html">
+                        <div class="imagemenu">
+                            <div class="nouveau">Nouveau</div>
+                            <img class="imghome" src="Images/lanoteenchantee.jpg" alt="lanoteenchantee" />
+                        </div>
+                        <div class="nomdurestaurant1">
+                            <h3>La note enchantée
+                            </h3>
+                            <p>Charonne</p>
+                        </div>
+
+                        <div class="liker">
+                            <i class="fa-solid fa-heart fullheart"></i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </a>
+                </article>
+            </div>
+
+            <!----------------- carte à la française ------------------>
+
+            <div class="desktopcarte">
+                <article>
+                    <a href="menualafrancaise.html">
+                        <div class="imagemenu">
+                            <img class="imghome" src="Images/alafrancaise.jpg" alt="alafrancaise" />
+                        </div>
+                        <div class="nomdurestaurant1">
+                            <h3>Á la Française
+                            </h3>
+                            <p>Cité Rouge</p>
+                        </div>
+                        <div class="liker">
+                            <i class="fa-solid fa-heart fullheart"></i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </a>
+                </article>
+
+                <!----------------- carte délice des sens ------------------>
+
+                <article>
+                    <a href="lesdelices.html">
+                        <div class="imagemenu">
+                            <img class="imghome" src="Images/lesdelices.jpg" alt="lesdelices" />
+                        </div>
+                        <div class="nomdurestaurant1">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <div class="liker">
+                            <i class="fa-solid fa-heart fullheart"></i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!----------------- Footer ------------------>
+
+    <footer>
+        <div class="footerlogo">ohmyfood</div>
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+            <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="mailto:heba.jammoul.1984@gmail.com">Contact</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
