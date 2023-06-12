@@ -630,4 +630,184 @@ body {
     margin-right: 6px;
   }
   
+  /********************** Responsive **********************/
+
+@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+
+  body {
+    max-width: 100%;
+    margin: auto;
+    font-family: Roboto;
+  }
+
+  .logo .fa-arrow-left-long {
+    font-size: 27px;
+    position: relative;
+    right: 500px;
+  }
+
+  .logo a {
+    max-width: 100%;
+  }
+
+  .mainpage {
+    margin-left: 100px;
+    margin-right: 100px;
+    max-width: 100%;
+  }
+
+  .description h1 {
+    text-align: center;
+  }
+
+  .description p {
+    margin-right: 0px;
+    padding: 0px;
+  }
+
+  .fonctionnement {
+    max-width: 100%;
+    padding-right: 0px;
+    box-sizing: content-box;
+  }
+
+  .fonctionnement h2 {
+    text-align: center;
+  }
+
+  .fonctionnement .choix {
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px 15px 10px 10px;
+  }
+
+  .fonctionnement .selection {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+  }
+
+  .fonctionnement .selection li {
+    height: 52px;
+  }
+
+  .fonctionnement .numero {
+    margin-top: 15px;
+  }
+
+  .Restaurants article {
+    width: 50%;
+  }
+
+  .Restaurants article a h2 {
+    text-align: center;
+  }
+
+  .Restaurants .desktopcarte {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .Menudurestaurant {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .Menudurestaurant .choixmenu .valider {
+    width: 82px;
+  }
+
+  .Menudurestaurant .choixmenu h3 {
+    overflow: visible;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  footer ul {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  footer ul li {
+    margin-right: 30px;
+  }
+
+  footer .footerlogo {
+    font-size: 20px;
+    margin: 25px 50px 0px 50px;
+  }
+
+  .loader {
+    width: 100%;
+    background-blend-mode: luminosity;
+    overflow: hidden;
+  }
+
+  .spinner {
+    -webkit-animation: body 2s;
+    animation: body 2s 2s forwards;
+    cursor: wait;
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+    opacity: 1;
+    -webkit-animation-timing-function: cubic-bezier(1, 0.44, 0.61, 1.01);
+    animation-timing-function: cubic-bezier(0.6, 0.38, 0.88, 0.66);
+  }
+
+  .spinner::before,
+  .spinner::after {
+    padding: 50px;
+    background: transparent;
+    position: absolute;
+    margin-left: 43%;
+    margin-top: 10%;
+    content: "";
+    border: 70px solid transparent;
+    border-radius: 50%;
+    border-color: #9356DC #9356DC rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    mix-blend-mode: darken;
+    animation: spinner 2s linear;
+    animation-iteration-count: 2;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+  }
+
+  .spinner::after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ff79da #ff79da;
+    animation-direction: reverse;
+    animation-duration: 2s;
+  }
+
+  @keyframes body {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes spinner {
+    0% {
+      opacity: 1;
+      visibility: hidden;
+    }
+
+    100% {
+      opacity: 1;
+      transform: rotate(2turn);
+      visibility: visible;
+      overflow: hidden;
+    }
+  }
+}
   
