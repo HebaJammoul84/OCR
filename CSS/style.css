@@ -647,6 +647,11 @@ footer ul li .fa-handshake-angle {
     font-family: Roboto;
   }
 
+  .mainpage {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
   .logo .fa-arrow-left-long {
     font-size: 27px;
     position: relative;
@@ -654,12 +659,6 @@ footer ul li .fa-handshake-angle {
   }
 
   .logo a {
-    max-width: 100%;
-  }
-
-  .mainpage {
-    margin-left: 100px;
-    margin-right: 100px;
     max-width: 100%;
   }
 
