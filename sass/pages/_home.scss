@@ -190,8 +190,8 @@ ul {
         flex-wrap: wrap;
         justify-content: center;
         background-color: white;
-       
-        a {
+      
+        .carte {
             background-color: white;
             color: black;
             text-decoration: none;
@@ -268,7 +268,6 @@ ul {
     p {
         margin: 0px;
         font-size: 18px;
-
     }
 
     .fa-regular {
@@ -278,8 +277,4 @@ ul {
         position: absolute;
         background-color: white;
     }
-
-
-
-
 }

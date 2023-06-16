@@ -1,125 +1,25 @@
-@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+@media only screen and (min-width: 1024px) {
 
     body {
         max-width: 100%;
         margin: auto;
         font-family: Roboto;
-    }
 
-    .logo {
-
-        .fa-arrow-left-long {
-            font-size: 27px;
-            position: relative;
-            right: 500px;
+        .mainpage {
+            animation-name: fadein;
+            animation-duration: 3s;
         }
 
-        a {
-            max-width: 100%;
-        }
-    }
+        @keyframes fadein {
+            0% {
+                opacity: 0.1;
+                ;
+            }
 
-    .mainpage {
-        margin-left: 100px;
-        margin-right: 100px;
-        max-width: 100%;
-    }
-
-    .description {
-        h1 {
-            text-align: center;
-        }
-
-        p {
-            margin-right: 0px;
-            padding: 0px;
-        }
-    }
-
-
-    .fonctionnement {
-        max-width: 100%;
-        padding-right: 0px;
-        box-sizing: content-box;
-
-
-
-        h2 {
-            text-align: center;
-        }
-
-        .choix {
-            font-weight: 700;
-            font-size: 16px;
-            padding: 15px 15px 10px 10px;
-        }
-
-        .selection {
-            flex-direction: row;
-            display: flex;
-            justify-content: center;
-
-            li {
-                height: 52px;
+            100% {
+                opacity: 0.1;
             }
         }
-
-        .numero {
-            margin-top: 15px;
-        }
-
-    }
-
-    .Restaurants article a {
-        width: 50%;
-
-        h2 {
-            text-align: center;
-        }
-    }
-
-    .Restaurants .desktopcarte {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 50px;
-        margin-left: 20px;
-        margin-right: 20px;
-      }
-
-    .Menudurestaurant {
-        margin-left: 100px;
-        margin-right: 100px;
-
-        .choixmenu .valider {
-            width: 82px;
-        }
-
-        .choixmenu {
-            h3 {
-                overflow: visible;
-            }
-        }
-    }
-
-    footer {
-        text-align: center;
-        flex-direction: row-reverse;
-
-        ul {
-            flex-direction: row;
-            justify-content: center;
-            margin-top: 50px;
-
-            li {
-                margin-right: 30px;
-            }
-        }
-
-        .footerlogo {
-            font-size: 20px;
-            margin: 25px 50px 0px 50px;
-        }
-
     }
 
     .loader {
@@ -191,4 +91,119 @@
         }
     }
 
+    .logo {
+
+        .fa-arrow-left-long {
+            font-size: 27px;
+            position: relative;
+            right: 500px;
+        }
+
+        a {
+            max-width: 100%;
+        }
+    }
+
+    .mainpage {
+        margin-left: 100px;
+        margin-right: 100px;
+        max-width: 100%;
+    }
+
+    .description {
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            margin-right: 0px;
+            padding: 0px;
+        }
+    }
+
+
+    .fonctionnement {
+        max-width: 100%;
+        padding-right: 0px;
+        box-sizing: content-box;
+
+
+
+        h2 {
+            text-align: center;
+        }
+
+        .choix {
+            font-weight: 700;
+            font-size: 16px;
+            padding: 15px 15px 10px 10px;
+        }
+
+        .selection {
+            flex-direction: row;
+            display: flex;
+            justify-content: center;
+
+            li {
+                height: 52px;
+            }
+        }
+
+        .numero {
+            margin-top: 15px;
+        }
+
+    }
+
+    .Restaurants article .carte {
+        width: 50%;
+
+        h1 {
+            text-align: center;
+        }
+    }
+
+    .Restaurants .desktopcarte {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .Menudurestaurant {
+        margin-left: 100px;
+        margin-right: 100px;
+
+        .choixmenu .valider {
+            width: 82px;
+        }
+
+        .choixmenu {
+            h2 {
+                overflow: visible;
+            }
+        }
+    }
+
+    footer {
+        text-align: center;
+        flex-direction: row-reverse;
+
+        ul {
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 50px;
+
+            li {
+                margin-right: 30px;
+            }
+        }
+
+        .footerlogo {
+            font-size: 20px;
+            margin: 25px 50px 0px 50px;
+        }
+
+    }
 }
