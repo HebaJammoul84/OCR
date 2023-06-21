@@ -332,6 +332,13 @@ body .mainpage {
   -webkit-text-fill-color: transparent;
 }
 
+.Restaurants .fa-regular {
+  font-size: 30px;
+  opacity: 1;
+  position: absolute;
+  background-color: white;
+}
+
 .Restaurants article .fa-regular:hover {
   transition-duration: 1000ms;
   opacity: 0;
@@ -368,13 +375,7 @@ body .mainpage {
   font-size: 18px;
 }
 
-.Restaurants .fa-regular {
-  font-size: 30px;
-  opacity: 1;
-  background-color: transparent;
-  position: absolute;
-  background-color: white;
-}
+
 
 /********************** Menu du restaurant **********************/
 
@@ -594,6 +595,36 @@ img {
 .Menudurestaurant .btn-commander {
   font-size: 20px;
   margin-left: 0px;
+}
+
+/********************** Last update **********************/
+
+.menu-item {
+  animation: fadeIn 1s ease-in-out;
+  animation-fill-mode: both;
+}
+
+.menu-item:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.menu-item:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.menu-item:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /********************** Footer **********************/
@@ -831,4 +862,33 @@ footer ul li .fa-handshake-angle {
       opacity: 0.1;
     }
   }
+
+  .menu-item {
+    animation: fadeIn 1s ease-in-out;
+    animation-fill-mode: both;
+  }
+  
+  .menu-item:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+  
+  .menu-item:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  
+  .menu-item:nth-child(3) {
+    animation-delay: 0.9s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
 }

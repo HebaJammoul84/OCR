@@ -208,6 +208,36 @@ img {
         margin-left: 0px;
 
     }
-
-
 }
+
+/********************** Last update **********************/
+
+$menu-delay: 0.3s;
+
+.menu-item {
+  animation: fadeIn 1s ease-in-out;
+  animation-fill-mode: both;
+
+  &:nth-child(1) {
+    animation-delay: $menu-delay * 1;
+  }
+
+  &:nth-child(2) {
+    animation-delay: $menu-delay * 2;
+  }
+
+  &:nth-child(3) {
+    animation-delay: $menu-delay * 3;
+  }
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
