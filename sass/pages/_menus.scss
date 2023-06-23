@@ -214,9 +214,15 @@ img {
 
 $menu-delay: 0.3s;
 
+.items {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px;
+  }
+
 .menu-item {
   animation: fadeIn 1s ease-in-out;
   animation-fill-mode: both;
+  list-style-type: none;
 
   &:nth-child(1) {
     animation-delay: $menu-delay * 1;
